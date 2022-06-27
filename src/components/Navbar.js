@@ -11,17 +11,21 @@ import TargetLogo from "./TargetLogo";
 export default class Navbar extends React.Component {
     render() {
         return (
-            <div className="navbar-container">
-                <nav id="nav" className="primary-nav">
-                    <TargetLogo />
-                    <Categories />
-                    <Deals />
-                    <WhatsNew />
-                    <Pickup />
-                    <SearchBar />
-                    <SignIn />
-                    <Cart />
-                </nav>
+            <div className="header-wrapper">
+                <div className="primary-navbar-container container-fixed">
+                    <div className="navbar-container">
+                        <nav id="nav" className="primary-nav">
+                            <TargetLogo />
+                            <Categories handleClick={this.props.props.categoriesClicked} />
+                            <Deals handleClick={this.props.props.dealsClicked} show={this.props.show.deals} />
+                            <WhatsNew />
+                            <Pickup />
+                            <SearchBar />
+                            <SignIn />
+                            <Cart />
+                        </nav>
+                    </div>
+                </div>
             </div>
         )
     }
