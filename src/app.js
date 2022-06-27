@@ -1,6 +1,7 @@
 import React from "react";
-import CategoriesModal from "./components/CategoriesModal";
-import DealsModal from "./components/DealsModal";
+import Footer from "./components/Footer";
+import CategoriesModal from "./components/modals/CategoriesModal";
+import DealsModal from "./components/modals/DealsModal";
 import Navbar from "./components/Navbar";
 
 class App extends React.Component {
@@ -37,6 +38,7 @@ class App extends React.Component {
                 <Navbar props={props} show={show} />
                 <CategoriesModal show={this.state.CategoriesModal} />
                 <DealsModal show={this.state.DealsModal} />
+                <Footer />
             </>
         )
     }
