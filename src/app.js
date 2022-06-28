@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "./components/Footer";
 import CategoriesModal from "./components/modals/CategoriesModal";
 import DealsModal from "./components/modals/DealsModal";
 import PickupModal from "./components/modals/PickupModal";
@@ -62,7 +61,6 @@ class App extends React.Component {
                 <DealsModal show={this.state.DealsModal} />
                 <WhatsNewModal show={this.state.WhatsNewModal} />
                 <PickupModal show={this.state.PickupModal} />
-                <Footer />
             </>
         )
     }
