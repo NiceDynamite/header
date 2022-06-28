@@ -2,11 +2,19 @@ import React from "react";
 
 export default class Pickup extends React.Component {
     render() {
+
+        const isClicked = (e) => {
+            e.preventDefault()
+            document.getElementById('pickup').classList.toggle('clicked')
+            document.getElementById('pad').classList.toggle('arrow-visible')
+            this.props.handleClick()
+        }
+
         return (
-            <div className="nav-pickup-container nav-item">
+            <div id="pickup" className="nav-pickup-container nav-item" onClick={isClicked}>
                 <a href="/" className="nav-pickup">Pickup & Delivery
                     <div className="arrow-holder">
-                        <i className="arrow"></i>
+                        <i id="pad" className="arrow"></i>
                     </div>
                 </a>
             </div >

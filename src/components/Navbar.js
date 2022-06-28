@@ -17,10 +17,10 @@ export default class Navbar extends React.Component {
                         <nav id="nav" className="primary-nav">
                             <TargetLogo />
                             <Categories handleClick={this.props.props.categoriesClicked} />
-                            <Deals handleClick={this.props.props.dealsClicked} show={this.props.show.deals} />
-                            <WhatsNew />
-                            <Pickup />
-                            <SearchBar />
+                            <Deals handleClick={this.props.props.dealsClicked} />
+                            <WhatsNew handleClick={this.props.props.whatsNewClicked} />
+                            <Pickup handleClick={this.props.props.pickupClicked} />
+                            <SearchBar query={this.props.props.queryItem} />
                             <SignIn />
                             <Cart />
                         </nav>

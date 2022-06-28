@@ -1,0 +1,1 @@
+INSERT INTO target_item (item) VALUES ('Shampoo');
