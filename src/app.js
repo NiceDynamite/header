@@ -5,6 +5,7 @@ import PickupModal from "./components/modals/PickupModal";
 import WhatsNewModal from "./components/modals/WhatsNewModal";
 import Navbar from "./components/Navbar";
 
+
 class App extends React.Component {
     constructor(props) {
         super(props)
@@ -19,9 +20,11 @@ class App extends React.Component {
     render() {
 
         const queryItem = (value) => {
-            fetch(`http://localhost:3001/api/item/${value}`)
+            fetch(`http://localhost:5001/api/item/${value}`)
                 .then(result => result.json())
-                .then((data) => console.log(data[0].id))
+                .then((data) =>
+                    localStorage.setItem('item_id', data.id)
+                )
         }
 
         const categoriesClicked = () => {
@@ -46,12 +49,6 @@ class App extends React.Component {
             whatsNewClicked,
             pickupClicked,
             queryItem
-        }
-
-        const show = {
-            categories: this.state.CategoriesModal,
-            deals: this.state.DealsModal,
-            whatsNew: this.state.WhatsNewModal
         }
 
         return (
