@@ -14,7 +14,7 @@ export default class Pickup extends React.Component {
             <div id="pickup" className="nav-pickup-container nav-item" onClick={isClicked}>
                 <a href="/" className="nav-pickup">Pickup & Delivery
                     <div className="arrow-holder">
-                        <i id="pad" className="arrow"></i>
+                        <i id="pad" className="arrow-modal"></i>
                     </div>
                 </a>
             </div >

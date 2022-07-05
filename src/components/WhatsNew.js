@@ -14,7 +14,7 @@ export default class WhatsNew extends React.Component {
             <div id="whatsNew" className="nav-new-container nav-item" onClick={isClicked}>
                 <a href="/" className="nav-new">What's New
                     <div className="arrow-holder">
-                        <i id="wad" className="arrow"></i>
+                        <i id="wad" className="arrow-modal"></i>
                     </div>
                 </a>
             </div>

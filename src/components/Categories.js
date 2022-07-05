@@ -14,7 +14,7 @@ export default class Categories extends React.Component {
             <div id="categories" className="nav-categories-container nav-item" onClick={isClicked}>
                 <a href="/" className="nav-categories">Categories
                     <div className="arrow-holder">
-                        <i id="cad" className="arrow"></i>
+                        <i id="cad" className="arrow-modal"></i>
                     </div>
                 </a>
             </div>
