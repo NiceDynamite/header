@@ -9,7 +9,7 @@ export default class SignIn extends React.Component {
                 </i>
                 <a href="/" className="nav-sign-in">Sign in
                     <div className="arrow-holder">
-                        <i className="arrow"></i>
+                        <i className="arrow-modal"></i>
                     </div>
                 </a>
             </div>
